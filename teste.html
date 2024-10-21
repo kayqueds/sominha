@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soma</title>
+</head>
+<body>
+<header>
+<link rel="shortcut icon" href="icons8-messages-30.png" type="image/x-icon"><h1>Somando Volores</h1>
+<aside>
+<p>Aproveite e some o que você conseguir</p>
+</aside>
+</header>
+<img src="gif.gif" alt="">
+<style>
+body{
+background-image: url('https://tse1.mm.bing.net/th?id=OIP.uenkRlQDhfK7OxyoWkL2JQAAAA&pid=Api&P=0&h=180');
+font:  bold 20px 'Arial', serif;
+background-repeat: no-repeat;
+background-size: cover;
+}
+main{
+text-align: center;  
+      }
+img{
+    margin-left: 25%;
+}
+header{
+    text-align: center;
+
+}
+#i1{
+    padding: 5px;
+    border-radius: 10px;
+    font: normal bolder 20px 'Arial', sans-serif;
+    margin-top: -155px;
+    min-width: 100px;
+    
+}
+#i2{
+    padding: 5px;
+    border-radius: 10px;
+    font: normal bolder 20px 'Arial', sans-serif;
+    margin-top: -5px;
+    min-width: 100px;
+   
+}
+
+#botao{
+    background-color: rgb(23, 144, 224);
+    width: 150px;
+    height: 50px;
+    border-top-right-radius: 15px;
+    color: white;
+    font: italic bolder 25px 'Verdana', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+</style>
+<main>
+<input placeholder="digite um número" type="number" id = "i1">
+<br><br>
+<input placeholder="digite um número" type="number" name="i2" id="i2">
+<br><br>
+<button id="botao" onclick="somar()" onmouseenter="mover()">SOMAR</button>
+
+
+
+</main>
+<script>
+function somar(){
+var n1 = window.document.getElementById("i1")
+var n2 = window.document.getElementById("i2")
+var res = window.document.getElementById("res")
+var b = window.document.getElementById("botao")
+b.style.backgroundColor = 'purple'
+
+var v1 = Number(n1.value)
+var v2 = Number(n2.value)
+
+var s = v1+v2
+window.alert(`O resultado entre ${v1} e ${v2} é igual a : ${s}`)
+}
+function mover(){
+    var b= window.document.getElementById('botao')
+    b.style.backgroundColor = 'red'
+    b.style.transitionDuration = '1.5s';
+}
+</script>
+</body>
+</html>
